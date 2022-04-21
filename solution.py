@@ -131,7 +131,7 @@ def get_route(hostname):
                     time_formatted = "%.0fms"%((timeReceived -t)*1000)
                     tracelist1 = [str(ttl),time_formatted,"hostname not returnable"]
                     tracelist2.append(tracelist1)
-                    contine
+                    continue
                     #Fill in end
 
                 if types == 11:
