@@ -43,7 +43,7 @@ def build_packet():
     # packet to be sent was made, secondly the checksum was appended to the header and
     # then finally the complete packet was sent to the destination.
     req_code = 0
-    temp_checksum = 0
+    myChecksum = 0
     id = os.getpid() & 0xFFFF
     seq = 1
 
