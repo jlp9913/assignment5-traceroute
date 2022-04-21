@@ -47,7 +47,7 @@ def build_packet():
     id = os.getpid() & 0xFFFF
     seq = 1
 
-    header= struct.pack("bbHHh",ICMP_ECHO_REQUEST,req_code,mychecksum, id, seq)
+    header= struct.pack("bbHHh",ICMP_ECHO_REQUEST,req_code,myChecksum, id, seq)
     # Make the header in a similar way to the ping exercise.
     # Append checksum to the header.
     data = struct.pack("d",time.time())
